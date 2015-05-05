@@ -8,13 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		AFA2420B1ACBC635004348DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2420A1ACBC635004348DD /* AppDelegate.swift */; };
-		AFA2420D1ACBC635004348DD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AFA2420C1ACBC635004348DD /* GameScene.sks */; };
 		AFA2420F1ACBC635004348DD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2420E1ACBC635004348DD /* GameScene.swift */; };
 		AFA242111ACBC635004348DD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA242101ACBC635004348DD /* GameViewController.swift */; };
 		AFA242141ACBC635004348DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA242121ACBC635004348DD /* Main.storyboard */; };
 		AFA242161ACBC635004348DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA242151ACBC635004348DD /* Images.xcassets */; };
 		AFA242191ACBC635004348DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFA242171ACBC635004348DD /* LaunchScreen.xib */; };
 		AFA242251ACBC635004348DD /* swiftrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA242241ACBC635004348DD /* swiftrisTests.swift */; };
+		AFA242401ACBC70B004348DD /* icon-29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA2422F1ACBC70B004348DD /* icon-29pt.png */; };
+		AFA242411ACBC70B004348DD /* icon-40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA242301ACBC70B004348DD /* icon-40pt.png */; };
+		AFA242421ACBC70B004348DD /* icon-60pt.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA242311ACBC70B004348DD /* icon-60pt.png */; };
+		AFA242431ACBC70B004348DD /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA242331ACBC70B004348DD /* background.png */; };
+		AFA242441ACBC70B004348DD /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA242341ACBC70B004348DD /* background@2x.png */; };
+		AFA242451ACBC70B004348DD /* gameboard.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA242351ACBC70B004348DD /* gameboard.png */; };
+		AFA242461ACBC70B004348DD /* gameboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA242361ACBC70B004348DD /* gameboard@2x.png */; };
+		AFA242471ACBC70B004348DD /* whitebg.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA242371ACBC70B004348DD /* whitebg.png */; };
+		AFA242481ACBC70B004348DD /* whitebg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFA242381ACBC70B004348DD /* whitebg@2x.png */; };
+		AFA242491ACBC70B004348DD /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFA2423A1ACBC70B004348DD /* bomb.mp3 */; };
+		AFA2424A1ACBC70B004348DD /* drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFA2423B1ACBC70B004348DD /* drop.mp3 */; };
+		AFA2424B1ACBC70B004348DD /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFA2423C1ACBC70B004348DD /* gameover.mp3 */; };
+		AFA2424C1ACBC70B004348DD /* levelup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFA2423D1ACBC70B004348DD /* levelup.mp3 */; };
+		AFA2424D1ACBC70B004348DD /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFA2423E1ACBC70B004348DD /* theme.mp3 */; };
+		AFA2424E1ACBC70B004348DD /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = AFA2423F1ACBC70B004348DD /* Sprites.atlas */; };
+		AFA242501ACBCA46004348DD /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2424F1ACBCA46004348DD /* Array2D.swift */; };
+		AFA242521ACC78C5004348DD /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA242511ACC78C5004348DD /* Block.swift */; };
+		AFA242541ACC8361004348DD /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA242531ACC8361004348DD /* Shape.swift */; };
+		AFA242561ACD934D004348DD /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA242551ACD934D004348DD /* SquareShape.swift */; };
+		AFA242581ACDA518004348DD /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA242571ACDA518004348DD /* TShape.swift */; };
+		AFA2425A1ACDA720004348DD /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA242591ACDA720004348DD /* LineShape.swift */; };
+		AFA2425C1ACDA8DC004348DD /* LShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2425B1ACDA8DC004348DD /* LShape.swift */; };
+		AFA2425E1ACDAB2A004348DD /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2425D1ACDAB2A004348DD /* JShape.swift */; };
+		AFA242601ACDAE59004348DD /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2425F1ACDAE59004348DD /* SShape.swift */; };
+		AFA242621ACF4FEB004348DD /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA242611ACF4FEB004348DD /* ZShape.swift */; };
+		AFA242641ACFA870004348DD /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA242631ACFA870004348DD /* Swiftris.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +56,6 @@
 		AFA242051ACBC635004348DD /* swiftris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA242091ACBC635004348DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA2420A1ACBC635004348DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFA2420C1ACBC635004348DD /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		AFA2420E1ACBC635004348DD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		AFA242101ACBC635004348DD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AFA242131ACBC635004348DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +64,32 @@
 		AFA2421E1ACBC635004348DD /* swiftrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftrisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA242231ACBC635004348DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA242241ACBC635004348DD /* swiftrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftrisTests.swift; sourceTree = "<group>"; };
+		AFA2422F1ACBC70B004348DD /* icon-29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29pt.png"; sourceTree = "<group>"; };
+		AFA242301ACBC70B004348DD /* icon-40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40pt.png"; sourceTree = "<group>"; };
+		AFA242311ACBC70B004348DD /* icon-60pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60pt.png"; sourceTree = "<group>"; };
+		AFA242331ACBC70B004348DD /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		AFA242341ACBC70B004348DD /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		AFA242351ACBC70B004348DD /* gameboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameboard.png; sourceTree = "<group>"; };
+		AFA242361ACBC70B004348DD /* gameboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gameboard@2x.png"; sourceTree = "<group>"; };
+		AFA242371ACBC70B004348DD /* whitebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitebg.png; sourceTree = "<group>"; };
+		AFA242381ACBC70B004348DD /* whitebg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whitebg@2x.png"; sourceTree = "<group>"; };
+		AFA2423A1ACBC70B004348DD /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb.mp3; sourceTree = "<group>"; };
+		AFA2423B1ACBC70B004348DD /* drop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drop.mp3; sourceTree = "<group>"; };
+		AFA2423C1ACBC70B004348DD /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
+		AFA2423D1ACBC70B004348DD /* levelup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelup.mp3; sourceTree = "<group>"; };
+		AFA2423E1ACBC70B004348DD /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theme.mp3; sourceTree = "<group>"; };
+		AFA2423F1ACBC70B004348DD /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		AFA2424F1ACBCA46004348DD /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		AFA242511ACC78C5004348DD /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		AFA242531ACC8361004348DD /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		AFA242551ACD934D004348DD /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
+		AFA242571ACDA518004348DD /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
+		AFA242591ACDA720004348DD /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
+		AFA2425B1ACDA8DC004348DD /* LShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LShape.swift; sourceTree = "<group>"; };
+		AFA2425D1ACDAB2A004348DD /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
+		AFA2425F1ACDAE59004348DD /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
+		AFA242611ACF4FEB004348DD /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
+		AFA242631ACFA870004348DD /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +113,13 @@
 		AFA241FC1ACBC635004348DD = {
 			isa = PBXGroup;
 			children = (
+				AFA242551ACD934D004348DD /* SquareShape.swift */,
+				AFA242571ACDA518004348DD /* TShape.swift */,
+				AFA242591ACDA720004348DD /* LineShape.swift */,
+				AFA2425B1ACDA8DC004348DD /* LShape.swift */,
+				AFA2425D1ACDAB2A004348DD /* JShape.swift */,
+				AFA2425F1ACDAE59004348DD /* SShape.swift */,
+				AFA242611ACF4FEB004348DD /* ZShape.swift */,
 				AFA242071ACBC635004348DD /* swiftris */,
 				AFA242211ACBC635004348DD /* swiftrisTests */,
 				AFA242061ACBC635004348DD /* Products */,
@@ -82,12 +139,16 @@
 			isa = PBXGroup;
 			children = (
 				AFA2420A1ACBC635004348DD /* AppDelegate.swift */,
-				AFA2420C1ACBC635004348DD /* GameScene.sks */,
 				AFA2420E1ACBC635004348DD /* GameScene.swift */,
 				AFA242101ACBC635004348DD /* GameViewController.swift */,
+				AFA242531ACC8361004348DD /* Shape.swift */,
+				AFA242631ACFA870004348DD /* Swiftris.swift */,
+				AFA2424F1ACBCA46004348DD /* Array2D.swift */,
+				AFA242511ACC78C5004348DD /* Block.swift */,
 				AFA242121ACBC635004348DD /* Main.storyboard */,
 				AFA242151ACBC635004348DD /* Images.xcassets */,
 				AFA242171ACBC635004348DD /* LaunchScreen.xib */,
+				AFA2422E1ACBC70B004348DD /* Blocs */,
 				AFA242081ACBC635004348DD /* Supporting Files */,
 			);
 			path = swiftris;
@@ -116,6 +177,44 @@
 				AFA242231ACBC635004348DD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFA2422E1ACBC70B004348DD /* Blocs */ = {
+			isa = PBXGroup;
+			children = (
+				AFA2422F1ACBC70B004348DD /* icon-29pt.png */,
+				AFA242301ACBC70B004348DD /* icon-40pt.png */,
+				AFA242311ACBC70B004348DD /* icon-60pt.png */,
+				AFA242321ACBC70B004348DD /* Images */,
+				AFA242391ACBC70B004348DD /* Sounds */,
+				AFA2423F1ACBC70B004348DD /* Sprites.atlas */,
+			);
+			path = Blocs;
+			sourceTree = "<group>";
+		};
+		AFA242321ACBC70B004348DD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AFA242331ACBC70B004348DD /* background.png */,
+				AFA242341ACBC70B004348DD /* background@2x.png */,
+				AFA242351ACBC70B004348DD /* gameboard.png */,
+				AFA242361ACBC70B004348DD /* gameboard@2x.png */,
+				AFA242371ACBC70B004348DD /* whitebg.png */,
+				AFA242381ACBC70B004348DD /* whitebg@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		AFA242391ACBC70B004348DD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				AFA2423A1ACBC70B004348DD /* bomb.mp3 */,
+				AFA2423B1ACBC70B004348DD /* drop.mp3 */,
+				AFA2423C1ACBC70B004348DD /* gameover.mp3 */,
+				AFA2423D1ACBC70B004348DD /* levelup.mp3 */,
+				AFA2423E1ACBC70B004348DD /* theme.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +298,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFA242191ACBC635004348DD /* LaunchScreen.xib in Resources */,
+				AFA242481ACBC70B004348DD /* whitebg@2x.png in Resources */,
+				AFA242401ACBC70B004348DD /* icon-29pt.png in Resources */,
+				AFA242471ACBC70B004348DD /* whitebg.png in Resources */,
+				AFA242451ACBC70B004348DD /* gameboard.png in Resources */,
+				AFA242461ACBC70B004348DD /* gameboard@2x.png in Resources */,
+				AFA2424E1ACBC70B004348DD /* Sprites.atlas in Resources */,
+				AFA2424C1ACBC70B004348DD /* levelup.mp3 in Resources */,
+				AFA242431ACBC70B004348DD /* background.png in Resources */,
+				AFA242491ACBC70B004348DD /* bomb.mp3 in Resources */,
 				AFA242161ACBC635004348DD /* Images.xcassets in Resources */,
-				AFA2420D1ACBC635004348DD /* GameScene.sks in Resources */,
+				AFA242411ACBC70B004348DD /* icon-40pt.png in Resources */,
+				AFA242421ACBC70B004348DD /* icon-60pt.png in Resources */,
+				AFA2424B1ACBC70B004348DD /* gameover.mp3 in Resources */,
+				AFA2424D1ACBC70B004348DD /* theme.mp3 in Resources */,
+				AFA242441ACBC70B004348DD /* background@2x.png in Resources */,
 				AFA242141ACBC635004348DD /* Main.storyboard in Resources */,
+				AFA2424A1ACBC70B004348DD /* drop.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +332,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA2425C1ACDA8DC004348DD /* LShape.swift in Sources */,
+				AFA242561ACD934D004348DD /* SquareShape.swift in Sources */,
 				AFA2420F1ACBC635004348DD /* GameScene.swift in Sources */,
+				AFA2425E1ACDAB2A004348DD /* JShape.swift in Sources */,
+				AFA242541ACC8361004348DD /* Shape.swift in Sources */,
+				AFA242501ACBCA46004348DD /* Array2D.swift in Sources */,
+				AFA242601ACDAE59004348DD /* SShape.swift in Sources */,
+				AFA2425A1ACDA720004348DD /* LineShape.swift in Sources */,
+				AFA242581ACDA518004348DD /* TShape.swift in Sources */,
+				AFA242521ACC78C5004348DD /* Block.swift in Sources */,
 				AFA242111ACBC635004348DD /* GameViewController.swift in Sources */,
+				AFA242641ACFA870004348DD /* Swiftris.swift in Sources */,
+				AFA242621ACF4FEB004348DD /* ZShape.swift in Sources */,
 				AFA2420B1ACBC635004348DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +537,7 @@
 				AFA2422A1ACBC635004348DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFA2422B1ACBC635004348DD /* Build configuration list for PBXNativeTarget "swiftrisTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +546,7 @@
 				AFA2422D1ACBC635004348DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

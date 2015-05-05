@@ -9,61 +9,95 @@
 import UIKit
 import SpriteKit
 
-extension SKNode {
-    class func unarchiveFromFile(file : NSString) -> SKNode? {
-        if let path = NSBundle.mainBundle().pathForResource(file, ofType: "sks") {
-            var sceneData = NSData(contentsOfFile: path, options: .DataReadingMappedIfSafe, error: nil)!
-            var archiver = NSKeyedUnarchiver(forReadingWithData: sceneData)
-            
-            archiver.setClass(self.classForKeyedUnarchiver(), forClassName: "SKScene")
-            let scene = archiver.decodeObjectForKey(NSKeyedArchiveRootObjectKey) as GameScene
-            archiver.finishDecoding()
-            return scene
-        } else {
-            return nil
-        }
-    }
-}
-
-class GameViewController: UIViewController {
-
+class GameViewController: UIViewController, SwiftrisDelegate {
+    var scene: GameScene!
+    var swiftris:Swiftris!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // configure the view.
+        let skView = view as SKView
+        skView.multipleTouchEnabled = false
+        
+        // create and configure the scene
+        scene = GameScene(size:skView.bounds.size)
+        scene.scaleMode = .AspectFill
+      
+        scene.tick = didTick
+        
+        swiftris = Swiftris()
+        swiftris.delegate = self
+        swiftris.beginGame()
 
-        if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
-            // Configure the view.
-            let skView = self.view as SKView
-            skView.showsFPS = true
-            skView.showsNodeCount = true
-            
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
-            skView.ignoresSiblingOrder = true
-            
-            /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .AspectFill
-            
-            skView.presentScene(scene)
-        }
+        // present the scene
+        skView.presentScene(scene)
+        
     }
-
-    override func shouldAutorotate() -> Bool {
-        return true
-    }
-
-    override func supportedInterfaceOrientations() -> Int {
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
-        } else {
-            return Int(UIInterfaceOrientationMask.All.rawValue)
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
-    }
-
+    
     override func prefersStatusBarHidden() -> Bool {
-        return true
+    return true
+    }
+    func didTick() {
+        swiftris.letShapeFall()
     }
 }
+
+func nextShape() {
+    let newShapes = swiftris.newShape()
+    if let fallingShape = newShapes.fallingShape {
+        self.scene.addPreviewShapeToScene(newShapes.nextShape!) {}
+        self.scene.movePreviewShape(fallingShape) {
+            
+            
+            sself.view.userInteractionEnabled = true
+            self.scene.startTicking()
+        }
+    }
+}
+func gameDidBegin(Swiftris: Swiftris) {
+
+    if swiftris.nextShape != nil && swiftris.nextShape!.blocks[0].sprite == nil {
+        scene.addPReviewShapeToScene(swiftris.nextShape!) {
+    
+                self.nextShape()
+                
+        } else {
+            nextShape()
+        }
+}
+    func gameDidEnd(swiftris: Swiftris) {
+        view.userInteractionEnabled = false
+        scene.stopTicking()
+}
+    func gameDidLevelUp(swiftris: Swiftris) {
+        
+}
+    func gameShapeDidLand(swiftris: Swiftris) {
+        scene.stopTicking()
+        nextSHape()
+}
+
+    func gameShapeDidMove(swiftris: Swiftris) {
+        scene.redrawShape(swiftris.fallingShape!) {}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
